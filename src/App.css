@@ -827,7 +827,7 @@ img {
 }
 
 .footer-section h3 {
-    color: black;
+    color: white;
     font-size: 1.2rem;
     margin-bottom: 1.2rem;
     position: relative;
@@ -845,7 +845,7 @@ img {
 }
 
 .footer-section p {
-    color: black;
+    color: white;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
@@ -860,7 +860,7 @@ img {
 }
 
 .footer-section ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
     transition: color 0.3s ease;
 }
