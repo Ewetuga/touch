@@ -682,11 +682,13 @@ img {
     border-radius: 20px;
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     border: 1px solid rgba(255, 255, 255, 0.18);
+  color:white;
 }
 
 .form-header {
     text-align: center;
     margin-bottom: 2.5rem;
+  
 }
 
 .form-header h2 {
@@ -699,7 +701,7 @@ img {
 }
 
 .form-header p {
-    color: black;
+    color: white;
     font-size: 1.1rem;
 }
 
@@ -716,7 +718,7 @@ img {
 }
 
 .input-group label {
-    color:black;
+    color:white;
     font-size: 0.9rem;
     font-weight: 500;
 }
@@ -728,7 +730,7 @@ img {
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
     background: rgba(0, 0, 0, 0.2);
-    color:black;
+    color:white;
     font-size: 1rem;
     transition: all 0.3s ease;
 }
