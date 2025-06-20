@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import bgVideo from './assets/bg.mp4'
 import medpix from './assets/med.jpg'
 import ladypix from './assets/woman.jpg'
@@ -9,10 +9,23 @@ import Footer from './footer'
 import './App.css'
 
 function App() {
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+
   return (
     <>
       <div className="app">
-        <video className="video-background" autoPlay loop muted playsInline>
+        {!isVideoLoaded && (
+          <div className="video-placeholder"></div>
+        )}
+        <video 
+          className={`video-background ${isVideoLoaded ? 'loaded' : ''}`}
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          loading="lazy"
+          onLoadedData={() => setIsVideoLoaded(true)}
+        >
           <source src={bgVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
